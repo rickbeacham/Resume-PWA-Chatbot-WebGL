@@ -17,13 +17,12 @@ root.render(
 // PWA Service Worker Registration
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
+    // Register the service worker from the root.
+    // The server is configured to serve this file explicitly from the 'dist' folder or 'server/public' fallback.
     navigator.serviceWorker
-      .register('/serviceWorker.js')
-      .then((registration) => {
-        console.log('SW registered: ', registration);
-      })
+      .register('/service-worker.js')
       .catch((registrationError) => {
-        console.log('SW registration failed: ', registrationError);
+        console.error('SW registration failed:', registrationError);
       });
   });
 }

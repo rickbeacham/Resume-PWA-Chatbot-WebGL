@@ -1,0 +1,1 @@
+// Moved to server/public/service-worker.js
