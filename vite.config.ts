@@ -3,13 +3,16 @@ import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
+  // Safely expose environment variables to the client
+  define: {
+    'process.env.API_KEY': JSON.stringify(process.env.API_KEY)
+  },
   plugins: [
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      // Force the filename to 'service-worker.js' to match server.js routing logic
-      filename: 'service-worker.js',
-      
+      filename: 'service-worker.js', // Match the server.js routing
+
       // Manifest Configuration
       manifest: {
         name: 'Rick Beacham Portfolio',
