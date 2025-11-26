@@ -1,0 +1,20 @@
+{
+  "short_name": "Rick B.",
+  "name": "Rick Beacham Portfolio",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='192' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' rx='40' fill='%230071e3'/%3E%3Ctext x='96' y='115' font-family='Arial' font-size='80' font-weight='bold' fill='white' text-anchor='middle'%3ERB%3C/text%3E%3C/svg%3E",
+      "type": "image/svg+xml",
+      "sizes": "192x192"
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='100' fill='%230071e3'/%3E%3Ctext x='256' y='310' font-family='Arial' font-size='220' font-weight='bold' fill='white' text-anchor='middle'%3ERB%3C/text%3E%3C/svg%3E",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff"
+}
